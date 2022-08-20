@@ -29,13 +29,15 @@ function calculateProfitAndLoss(cost, stock, selling) {
         outputDisplay("Selling price can't be empty")
     } else {
  if (cost > selling) {
-        var loss = (cost - selling)*stock;
+        var loss = (cost - selling);
+        var totalLoss=(cost - selling)*stock;
         var lossPercentage = ((loss/cost)*100).toFixed(2);
-        outputDisplay("So sorry 🤫 😞, you have loss Rs." + loss + "/- and the loss percentage is " + lossPercentage +"%, failure is a stepping stone to success, don't give up")
+        outputDisplay("So sorry 🤫 😞, you have loss Rs." + totalLoss + "/- and the loss percentage is " + lossPercentage +"%, failure is a stepping stone to success, don't give up")
     } else if (selling > cost) {
-        var profit = (selling - cost)*stock;
+        var profit = (selling - cost);
+        var totalProfit = (selling - cost)*stock;
         var profitPercentage = ((profit/cost)*100).toFixed(2);
-        outputDisplay("Congratulation 💰💰, you have gain Rs." + profit + "/- and the profit percentage is " + profitPercentage+"%")
+        outputDisplay("Congratulation 💰💰, you have gain Rs." + totalProfit + "/- and the profit percentage is " + profitPercentage+"%")
     } else {
         outputDisplay("put more effort, only hard work pays")
     }
