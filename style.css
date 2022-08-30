@@ -29,24 +29,35 @@ input{
     margin-bottom: 1rem;
     border-radius: 0.3rem;
     border-color: var(--secondary-color);
-}
-
-
-input{
-    padding: 0.3rem;
+    padding: 0.5rem;
     width: 50%;
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--off-white);
 }
+
 button{
     border-radius: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
     cursor: pointer;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: var(--off-white);
+    background-color: var(--secondary-color);
+    color: var(--off-white);
 }
 .output{
     background-color: var(--out-color);
     padding: 2rem;
     border-radius: 1rem;
+}
+.list-non-bullet{
+    list-style: none;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0.3rem;
+}
+.link{
+    text-decoration: none;
+    color: var(--out-color);
+    cursor: pointer;
+    font-weight: bold;
 }
